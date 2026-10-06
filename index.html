@@ -1,0 +1,108 @@
+<head>
+    <title>Formulario de datos</title>
+    <link rel="icon" type="image/png" href="img.jpg">
+    <link rel="stylesheet" href="style.css">
+    <img src="img1.jpg" alt="Logotipo" class="logo-esquina">
+</head>
+<body style="background-color: rgb(133, 180, 124);">
+    <h1>Formulario de datos</h1>
+    <label >Usuario</label>
+    <input type="text" name="usuario">
+    <br>
+    <br>
+    <label >Nombres</label>
+    <input type="text" name="nombres" id="nombres" >
+    <br>
+    <br>
+    <label >Apellidos</label>
+    <input type="text" name="apellidos"  id="apellidos">
+    <br>
+    <br>
+    <label >contraseña</label>
+    <input type="password" name="contra">
+    <br>
+    <br>
+    <label >correo electrónico</label>
+    <input type="email" name="correo">
+    <br>
+    <br>
+    <label >Edad</label>
+    <input type="number" name="edad">
+    <br>
+    <br>
+    <label >Edad oficial</label>
+    <input type="number" name="edadoficial" min="18" max="65" >
+    <br>
+    <br>
+    <label >puntuacion</label>
+    <input type="number" name="puntuacion" min="5" max="50" step="5" >
+    <br>
+    <br>
+    <label >fecha de nacimiento</label>
+    <input type="date" name="nacimiento"  >
+     <br>
+    <br>
+    <label >hora de nacimiento</label>
+    <input type="time" name="nacimiento"  >
+     <br>
+    <br>
+    <label >color favorito</label>
+    <input type="color" name="nacimiento"  >
+    <br>
+    <br>
+    <h2>Que tipo de musica te gusta ?</h2>
+    <br>
+    <label >Pop</label>
+    <input type="radio" name="pais" value="Alemania">
+    <br>
+    <label >Cumbia</label>
+    <input type="radio" name="pais" value="Bolivia">
+    <br>
+    <label >Boleros</label>
+    <input type="radio" name="pais" value="Brasil">
+    <br>
+    <label >Reggaetón</label>
+    <input type="radio" name ="pais" value="Francia">
+    <br>
+    <br>
+    <h2> Que Libro te gusta mas </h2>
+    <br>
+    <label > El Principito </label>
+    <input type="checkbox" name="peliculas" value="juego">
+    <br>
+    <label > La Tregua </label>
+    <input type="checkbox" name="peliculas" value="rapidos">
+    <br>
+    <label >La Metamorfosis</label>
+    <input type="checkbox" name="peliculas" value="interestelar">
+    <br>
+    <label >El extrangero</label>
+    <input type="checkbox" name="peliculas" value="infierno">
+    <br>
+    <label >Rebelion en la Granja </label>
+    <input type="checkbox" name="peliculas" value="sentencia">
+    <br>
+    <label> Otro </label>
+    <input type="checkbox" name="peliculas" value="sentencia">
+    <br><br>
+    <label >Seleccione un archivo</label>
+    <input type="file" name="archivo" accept=".xlsx" >
+    <br><br>
+    <label >Seleccione un valor</label>
+    <input type="range" name="archivo" min="0" max="100" value="50" >
+    <br>    
+    <br>
+    <button  onclick="saludo()" >Saludo</button>
+    <p id="mensaje" ></p>
+     <label >Nota teórica</label>
+    <input type="number" id="nota_teorica" min="0" max="30" >
+    <label >Nota práctica</label>
+    <input type="number" id="nota_practica" min="0" max="70" >
+    <button onclick="calculo_nota()">nota</button>
+    
+    <p id="nota_sumada"></p>
+    <script src="scripformulario.js" ></script>
+    <div class="formulario"></div>
+
+</body>
+</html>
